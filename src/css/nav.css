@@ -59,10 +59,15 @@ nav .contact:hover {
 }
 
 nav .contact span {
+  width: 105px;
   display: block;
   font-weight: 500;
   font-size: 14px;
   padding: 3px 0;
+}
+
+nav .contact span i {
+  padding-right: 5px;
 }
 
 nav .sidebar {
@@ -75,13 +80,19 @@ nav .sidebar {
   flex-direction: column;
   background: white;
   padding: 35px 50px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   display: none;
   transition: 0.5s;
 }
 
 nav .sidebar.active {
   right: 0;
+}
+
+nav .sidebar a {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 25px;
 }
 
 nav .ham {
@@ -156,5 +167,16 @@ nav .ham {
 
   nav .logo {
     width: 170px;
+  }
+
+  nav .contact {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  nav .sidebar {
+    width: 100%;
+    right: -100%;
   }
 }

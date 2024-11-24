@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import {
   BrowserRouter as Router,
-  // Route,
+  Route,
   Routes,
   useLocation,
 } from "react-router-dom";
 
 import Nav from "./components/Nav.jsx";
+import Home from "./components/Home.jsx";
 
 import "./App.css";
 
@@ -19,11 +20,11 @@ function App() {
       const body = document.querySelector("body");
 
       // preloading.classList.remove("inactive");
-      body.style.overflow = "hidden";
+      // body.style.overflow = "hidden";
 
       setTimeout(() => {
         // preloading.classList.add("inactive");
-        body.style.overflow = "scroll";
+        // body.style.overflow = "scroll";
       }, 1000);
     }, [location]);
 
@@ -34,7 +35,9 @@ function App() {
     <Router>
       <Nav />
       <RouteHandler />
-      <Routes></Routes>
+      <Routes>
+        <Route exact path="/" Component={Home} />
+      </Routes>
     </Router>
   );
 }

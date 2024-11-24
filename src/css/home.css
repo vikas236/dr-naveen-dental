@@ -1,0 +1,471 @@
+.home {
+  width: 100%;
+  min-height: 100dvh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: visible;
+}
+
+.home > div {
+  width: calc(100vw - 120px);
+}
+
+/* hero section */
+
+.home .hero {
+  display: flex;
+  gap: 25px;
+}
+
+.home .hero > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.home .hero .left {
+  width: 50%;
+  height: fit-content;
+}
+
+.home .hero .left .top {
+  padding: 0 50px;
+}
+
+.home .hero h1 {
+  width: 70%;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 75px;
+}
+
+.home .hero p {
+  padding-right: 150px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.home .hero .scheduling {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-top: 50px;
+}
+
+.home .hero .scheduling button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px 40px;
+  border-radius: 15px;
+  background: #333333;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.home .hero .scheduling button:hover {
+  background: #e0f7ef;
+  color: black;
+}
+
+.home .hero .scheduling > span {
+  width: 1px;
+  height: 30px;
+  font-size: 44px;
+  font-weight: 200;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.home .hero .scheduling .message span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.home .hero .scheduling .message a.redirect {
+  color: black;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.home .hero .scheduling .message a.redirect:hover {
+  color: #333333;
+}
+
+.home .hero .scheduling .message i {
+  transform: rotate(-45deg);
+  font-size: 24px;
+  position: absolute;
+}
+
+.home .hero .left .bottom {
+  display: flex;
+  gap: 25px;
+  padding-top: 50px;
+}
+
+.home .hero .left .bottom img {
+  width: 50%;
+  height: 420px;
+  border-radius: 45px;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.047);
+}
+
+.home .hero .right {
+  position: relative;
+  height: fit-content;
+}
+
+.home .hero .right img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.home .hero .right .call_box {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  padding: 35px 25px;
+  border-radius: 25px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home .hero .right .call_box span:first-of-type {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.home .hero .right .call_box > span:last-of-type {
+  display: block;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .hero .right .call_box > span a {
+  display: inline !important;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.home .hero .right .call_box > span a:hover {
+  background: white;
+  color: black;
+}
+
+/* homeabout */
+
+.homeabout {
+  padding-top: 150px;
+  display: flex;
+  gap: 50px;
+}
+
+.homeabout .left {
+  width: 35%;
+  display: flex;
+  justify-content: end;
+}
+
+.homeabout .left p {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.homeabout .right {
+  width: 65%;
+}
+
+.homeabout .right p {
+  width: 65%;
+  font-size: 38px;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.homeabout .right img.logo_mini {
+  width: 60px;
+  padding-bottom: 85px;
+}
+
+.homeabout .right .images {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 55px;
+}
+
+.homeabout .right .images img {
+  border-radius: 40px;
+}
+
+.homeabout .right p:last-of-type {
+  width: 45%;
+  font-size: 17px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.homeabout .right span {
+  font-weight: 500;
+}
+
+.homeabout .right i {
+  font-size: 28px;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 5px;
+}
+
+/* why choose us */
+
+.whychoose {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+  margin-top: 75px;
+}
+
+.whychoose .background {
+  width: 100vw;
+  background: #f5f2f5;
+  position: absolute;
+  inset: 0;
+  left: -70px;
+  z-index: -1;
+}
+
+.whychoose h1 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.whychoose .cells {
+  display: flex;
+  margin-top: 25px;
+  gap: 25px;
+}
+
+.whychoose .cell {
+  background: white;
+  width: 25%;
+  height: 450px;
+  padding: 35px 50px;
+  border-radius: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.047);
+  transition: 0.3s;
+  position: relative;
+}
+
+.whychoose .cell:hover {
+  transform: translateY(-5px);
+  top: -5px;
+}
+
+.whychoose .cell h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.whychoose .cell p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.whychoose .cell img {
+  position: absolute;
+  bottom: 40px;
+}
+
+/* free consultation */
+
+.home .consult {
+  padding: 65px 0;
+  display: flex;
+  gap: 35px;
+}
+
+.consult .left {
+  width: 50%;
+  position: relative;
+}
+
+.consult .left img {
+  width: 100%;
+  border-radius: 35px;
+}
+
+.consult .left .message {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  position: absolute;
+  inset: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 30px 35px;
+}
+
+.consult .left .message * {
+  display: block;
+  color: white;
+}
+
+.consult .left .message span {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.consult .left .message button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.consult .left .message button:hover {
+  background: white;
+  color: black;
+}
+
+.consult .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 135px;
+}
+
+.consult .right h1 {
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.consult .right span:first-of-type {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.consult .right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.consult .right ul li {
+  width: 75%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.consult .right ul li i {
+  color: #004a5e;
+  font-size: 32px;
+}
+
+.consult .right span:last-of-type {
+  color: rgba(0, 0, 0, 0.46);
+}
+
+/* our services */
+
+.ourservices {
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  position: relative;
+  padding: 50px 0;
+}
+
+.ourservices h1 {
+  font-size: 56px;
+  font-weight: 400;
+  padding-bottom: 35px;
+}
+
+.ourservices .background {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  left: -70px;
+  background: #333333;
+  z-index: -1;
+}
+
+.ourservices .cells {
+  width: 150vw;
+  display: flex;
+  gap: 35px;
+  padding-bottom: 50px;
+}
+
+.ourservices .cell {
+  width: 430px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  padding: 35px;
+}
+
+.ourservices .cell * {
+  position: relative;
+  z-index: 1;
+}
+
+.ourservices .cell span {
+  font-size: 14px;
+}
+
+.ourservices .cell img {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+}
