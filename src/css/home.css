@@ -459,7 +459,27 @@
 }
 
 .ourservices .cell span {
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.ourservices .cell h2 {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.ourservices .cell button {
+  position: absolute;
+  padding: 15px 25px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  bottom: 35px;
+}
+
+.ourservices .cell button:hover {
 }
 
 .ourservices .cell img {
